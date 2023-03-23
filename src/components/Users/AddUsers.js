@@ -15,7 +15,7 @@ const AddUsers = (props) => {
     if (+ageChange < 0) {
       return;
     }
-    console.log(useredChange, ageChange);
+    props.onAddUser(useredChange, ageChange);
     setAgeChange('');
     setUseredChange('');
   };
